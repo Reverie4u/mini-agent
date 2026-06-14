@@ -27,3 +27,8 @@
 2. 写 plan → 用户确认
 3. 按 plan 实现代码
 4. 更新 spec 状态为"已实现"
+
+### 注意事项
+
+- **spec 和 plan 必须写到项目 `docs/superpowers/` 目录下**，不能写到 `~/.claude/plans/` 等 Claude 内部路径
+- `~/.claude/plans/` 下的 plan 文件仅在 plan 模式下用于审核流程，最终 plan 必须落到项目目录
