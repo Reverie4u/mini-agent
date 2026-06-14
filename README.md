@@ -5,7 +5,9 @@
 ## 安装
 
 ```bash
-pip install .
+git clone https://github.com/Reverie4u/mini-agent.git
+cd mini-agent
+pipx install .
 ```
 
 ## 配置
