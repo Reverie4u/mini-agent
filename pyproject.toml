@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-agent"
+version = "0.1.0"
+description = "最小化 LLM Agent 循环 — 支持工具调用的命令行 AI 助手"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.39.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+mini-agent = "mini_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/user/mini-agent"
+
+[tool.setuptools.packages.find]
+include = ["mini_agent*"]
